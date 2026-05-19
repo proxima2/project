@@ -10,16 +10,15 @@ on:
       - main
 
 jobs:
-  build:
+  sonarcloud:
     name: SonarCloud
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      - name: SonarCloud Scan
-        uses: SonarSource/sonarcloud-github-action@master
-
+      - name: SonarQube Scan
+        uses: SonarSource/sonarqube-scan-action@v5
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SONAR_TOKEN: ${{ secrets.S3fea9363d4784d5ea19012e48b8f718fb22e1b93 }}
+          SONAR_TOKEN: ${{ secrets.3fea9363d4784d5ea19012e48b8f718fb22e1b93 }}
