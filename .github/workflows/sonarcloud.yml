@@ -22,4 +22,4 @@ jobs:
 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.S3fea9363d4784d5ea19012e48b8f718fb22e1b93 }}
